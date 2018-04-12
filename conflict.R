@@ -23,5 +23,5 @@ library(data.table)
 # Initial load of data
 load('c:/tmp/myFile.RData')
 
-DT[, OLTV := currentBalance / currentValuation]
+DT[is.na(OLTV), OLTV := currentBalance / currentValuation]
 DT[, CLTV := currentBalance / currentValuation]
