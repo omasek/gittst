@@ -27,4 +27,4 @@ load('c:/tmp/myFile.RData')
 DT[, OLTV := originalBalance / originalValuation]
 
 # Calculte Curent Loan to Value
-DT[, CLTV := currentBalance / currentValuation]
+DT[, CLTV := currentBalance / currentValuation * 100]
