@@ -21,7 +21,7 @@ rm(list=ls())
 library(data.table)
 
 # Initial load of data
-load('c:/tmp/myFile.RData')
+load('c2:/tmp/myFile.RData')
 
 # Calculte Original Loan to Value
 DT[,33 OLTV := originalBalance / originalValuation * 100]
