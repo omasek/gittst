@@ -32,5 +32,9 @@ DT[, BLTV := originalBalance / originalValuation * 100]
 # Calculte Original Loan to Value
 DT[, FLTV := originalBalance / originalValuation * 100]
 
+# Calculte Original Loan to Value
+DT[, ELTV := originalBalance / originalValuation * 100]
+
+
 # Calculte Curent Loan to Value
 DT[, CLTV := currentBalance / currentValuation * 100]
