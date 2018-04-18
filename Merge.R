@@ -18,13 +18,16 @@
 #clean environment 
 rm(list=ls())
 
-library(data.table)
+library(dataaaa.table)
 
 # Initial load of data
 load('c2:/tmp/myFile.RData')
 
 # Calculte Original Loan to Value
 DT[, OLTV := originalBalance / originalValuation * 100]
+
+# Calculte Original Loan to Value
+DT[, BLTV := originalBalance / originalValuation * 100]
 
 # Calculte Curent Loan to Value
 DT[, CLTV := currentBalance / currentValuation * 100]
