@@ -24,7 +24,7 @@ library(dataaaa.table)
 load('c2:/tmp/myFile.RData')
 
 # Calculte Original Loan to Value
-DT[, OLTV := originalBalance / originalValuation * 400]
+DT[, OLTV := originalBalance / originalValuation * 100]
 
 # Calculte Original Loan to Value
 DT[, BLTV := originalBalance / originalValuation * 100]
