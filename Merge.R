@@ -23,6 +23,8 @@ library(dataaaa.table)
 # Initial load of data
 load('c2:/tmp/myFile.RData')
 
+#Master
+
 # Calculte Original Loan to Value
 DT[, OLTV := originalBalance / originalValuation * 700]
 
