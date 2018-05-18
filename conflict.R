@@ -31,3 +31,5 @@ DT[is.na(OLTV),bOLTV := originalBalance / originalValuation]
 
 #Calculate Current Loan to Value
 DT[, CLTV := currentBalance / currentValuation]
+
+#Local Branche
